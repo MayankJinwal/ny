@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personalized Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Happy New Year, My Priye!</h1>
+        <p>You're the sleepy panda I adore. 💖</p>
+    </header>
+
+    <main>
+        <section id="music">
+            <h2>Kuch Songs For My Priye</h2>
+            <div class="song-container">
+                <audio controls>
+                    <source src="Ishq Hai_192(Ghantalele.com).mp3" type="audio/mp3">
+                </audio>
+                <p><strong>*Ishq Hai* from *Mismatched*</strong> – Her Favorite! 💝</p>
+            </div>
+            
+            <div class="song-container">
+                <audio controls>
+                    <source src="Zaroor Aparshakti Khurana 128 Kbps.mp3" type="audio/mp3">
+                </audio>
+                <p><strong>*Zaroor* by Aparshakti Khurana</strong> – A gift from me! 💖</p>
+            </div>
+        </section>
+
+        <section id="panda">
+            <h2>Ekk Panda Appke Liye Bhi 🐼</h2>
+            <div class="video-container">
+                <video src="panda.mp4" controls></video>
+            </div>
+        </section>
+
+        <section id="food">
+            <h2>What would you like to eat after coming over?</h2>
+            <form id="foodMenu">
+                <label for="foodChoice">Choose your favorite food:</label>
+                <select id="foodChoice">
+                    <option value="bhindi">Bhindi</option>
+                    <option value="moongKiDal">Moong Ki Dal</option>
+                    <option value="pasta">Pasta</option>
+                </select>
+                <button type="button" onclick="submitFoodChoice()">Submit</button>
+            </form>
+            <div id="foodResponse" class="response-animation"></div>
+            <p><strong>Aree, kuchh bhi nahi toh option dalna hi bhool gaya!</strong></p>
+        </section>
+
+        <section id="heartfelt-message">
+            <h2>Kuch Aapke liye 💖</h2>
+            <div class="message-content">
+                <p>Shyd kabhi kabhi zada chessy ho jata hai prr tumhe sab pata hota hai ki mere man me kya hai me bhi khud ko itta smjh nahi pata jitta tum samjh leti uske liye to mere pass words hi nahi hai</p>
+                <p>prr jo bhi prr hamesha dhyan rakhna ki har buri se buri situation me bhi hu tumhare sath huu to bata diya karoo na kya aab tum consider bhi nahi karti batane ke liye so i am here for you always</p>
+                <p>I Know Ajj Ka Din Achha Nahi Tha Prr kyu bhool jati ho you have me with you meri Priye</p>
+                <p><strong>So You are The Best Part of My 2024 💖</strong></p>
+                <p>shyd abhi bhi kuch bol nahi paa raha hu laga raha hai prr tum smjh rahi i guess prr Han I want to start my this year with you.</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>One Request!</h2>
+            <p>Ek Cutie cutie Wala Voice Note Bhej Do 💖</p>
+            <div class="popup-buttons">
+                <button onclick="acceptVoiceNote()">Yes</button>
+                <button onclick="declineVoiceNote()">No</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with love by Your Priya💖</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
